@@ -489,6 +489,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background: var(--oceancolor);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     border-color: var(--oceancolor);
+    outline-style: none;
  }
 
 .customer-heading {
@@ -517,13 +518,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
     column-gap: 24px;
 }
 
-.customer-icon:hover {
+.customer-icon:hover, .customer-icon:focus  {
     fill: var(--oceancolor);
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.20), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
-.customer-icon-link:focus .customer-icon{
-    fill: var(--oceancolor);
+.customer-icon-link:focus {
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.20), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    outline-style: none;
+    border: none;
+}
+
+.customer-icon-link:focus .customer-icon {
+    fill: var(--oceancolor);
 }
 
 .socialmedia-icon-list {
