@@ -458,8 +458,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.features-icon:hover {
+.features-icon:hover, .features-icon:focus {
     fill: var(--oceancolor);
+}
+
+.features-icon-link:focus {
+        fill: var(--oceancolor);
 }
 
 .team-icon-list {
