@@ -12,6 +12,8 @@
     --navybluemodalcolor: #2e2f42;
     --greycolor: #2e2f42;
     --dairycolor: #fcfcfc;
+    --orangecolor: orange; 
+    --lightslatecolor: #8E8F99;
 }
 
 * {
@@ -274,6 +276,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding: 32px 16px;
 }
 
+.projects-item-title-container:hover {
+    border: 1px solid var(--CLOUD, #F4F4FD);
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 .projects-item-title {
     font-size: 20px;
     color: var(--navyblue);
@@ -292,10 +302,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /*Porfolio-Body-End*/
 
 /*Studio-Body*/
+
+.studio-main-main {
+   background-image: linear-gradient(to right, rgba(46, 47, 66, .7), rgba(46, 47, 66, .7));
+   text-align: center;
+   padding: 188px 0px;
+   object-fit: cover;
+}
+
 .section.studio-main {
     background-color: var(--navyblue);
     text-align: center;
-    padding: 188px 0px;
+    background-image: url(../images/img8.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
 }
 
 .studio-main-title {
@@ -305,6 +326,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 1.12px;
     margin-bottom: 48px;
 }
+
 
 .studio-button {
     color: var(--whitecolor);
@@ -413,3 +435,133 @@ h1, h2, h3, h4, h5, h6, p, ul {
 } 
 
 /*Studio-Body-End*/
+
+/*Icons Style*/
+
+.svg {
+    fill: var(--slatecolor);
+}
+
+
+.features-item-icon-box {
+    background-color: var(--cloudcolor);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 24px 0px;
+    display: flex;
+    justify-content: center;
+}
+.features-item-icon-box:hover {
+    border: 1px solid var(--cloudcolor);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.features-icon:hover {
+    fill: var(--orangecolor);
+}
+
+.team-icon-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.team-icon{
+    fill: var(--whitecolor);
+}
+
+
+.team-icon-link {
+    border-radius: 50%;
+    background: var(--iriscolor);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    width: 40px; 
+    height: 40px;
+    padding: 8px;
+}   
+
+.team-icon-link:hover, .team-icon-link:focus {
+    background: var(--oceancolor);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    border-color: var(--oceancolor);
+ }
+
+.customer-heading {
+        color: var(--NAVY-BLUE, #2E2F42);
+        text-align: center;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        margin-bottom: 72px;
+}
+
+.customer-item{
+    width: 168px;
+    border-radius: 4px;
+    border: 1px solid var(--lightslatecolor);
+    display: inline-block;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.customer-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+}
+
+.customer-icon:hover {
+    fill: var(--oceancolor);
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.20), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+.customer-icon-link:focus .customer-icon{
+    fill: var(--oceancolor);
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.20), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.socialmedia-icon-list {
+    display: flex;  
+    column-gap: 16px ;
+}
+
+.socialmedia {
+    color: var(--whitecolor);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.socialmedia-icon{
+    fill: var(--whitecolor);
+}
+
+.main-footer-container {
+    display: flex;
+    column-gap: 120px;
+}
+
+.socialmedia-icon-link {
+    border-radius: 50%;
+    background: var(--iriscolor);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.socialmedia-icon-link:hover, .socialmedia-icon-link:focus  {
+    background: var(--greencolor);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    border-color: var(--greencolor);
+}
