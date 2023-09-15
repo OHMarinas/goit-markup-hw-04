@@ -459,7 +459,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .features-icon:hover {
-    fill: var(--orangecolor);
+    fill: var(--oceancolor);
 }
 
 .team-icon-list {
@@ -570,4 +570,5 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background: var(--greencolor);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     border-color: var(--greencolor);
+    outline: none;
 }
